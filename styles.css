@@ -1,0 +1,70 @@
+body{
+     height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+
+background: linear-gradient(45deg,  
+        red, orange, yellow, green, cyan, blue, purple, magenta, red
+    );
+    background-size: 400% 400%; /* Large enough to avoid sudden color jumps */
+    background-attachment: fixed;
+    animation: colorWave 20s linear infinite; /* Smooth animation speed */
+    margin: 0;
+
+
+}
+
+
+@keyframes colorWave {
+    0% { background-position: 0% 100%; }   /* Start bottom-left */
+    50% { background-position: 50% 50%; }  /* Move naturally through the center */
+    100% { background-position: 100% 0%; } /* Exit top-right smoothly */
+}
+
+
+#container{
+   
+width: 300px;
+border-radius: 10px;
+background-color: rgba(255, 255, 255, 0.629);
+text-align: center;
+padding: 15px;
+}
+
+
+#rol{
+height:39px ;
+width: 73px;
+font-size: 1.5em;
+border: none ;
+background-color: #10ff04;
+border-radius: 10px;
+padding: 5px;
+color: white;
+cursor: pointer;
+transform-origin:center ;
+transition:transform 0.5s ease;
+margin-bottom: 20px;
+}
+
+.ps{
+background-color: hsl(0, 100%, 82%);
+padding: 5px;
+margin-top:5px;
+margin-bottom: 0px;
+border-radius: 10px;
+font-family:  Helvetica ;
+font-style: italic;
+}
+.clicked{
+background-color: red;
+
+transform: rotate(360deg) 
+}
+
+
+
+
+
+
